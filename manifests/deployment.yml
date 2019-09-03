@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: koenongenapipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: koenongenapipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: koenongenapipelinesjavascriptdocker 
+          image: stressydev.azurecr.io/koenongenapipelinesjavascriptdocker 
+          ports:
+          - containerPort: 8080
